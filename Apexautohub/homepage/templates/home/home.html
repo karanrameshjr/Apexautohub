@@ -1,10 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Landing Page</title>
-    {% load static %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'CSS/styles.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -186,7 +186,7 @@
     <!-- Video Background -->
     <video autoplay loop muted poster="{% static 'video/video-poster.jpg' %}">
         <!-- Include a poster image for browsers that do not support video -->
-        <source src="{% static 'video/carv.mp4' %}" type="video/mp4">
+        <source src="{% static '/video/carv.mp4' %}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -200,11 +200,11 @@
     <!-- Image Section -->
     <section class="image-section">
         <div class="image-container">
-            <img class="landing-image" src="{% static 'images/landing1.png' %}" alt="Image 1">
-            <img class="landing-image" src="{% static 'images/landing2.png' %}" alt="Image 2">
-            <img class="landing-image" src="{% static 'images/landing3.png' %}" alt="Image 3">
-            <img class="landing-image" src="{% static 'images/landing4.png' %}" alt="Image 4">
-            <img class="landing-image" src="{% static 'images/landing5.png' %}" alt="Image 5">
+            <img class="landing-image" src="{% static '/images/landing1.png' %}" alt="Image 1">
+            <img class="landing-image" src="{% static '/images/landing2.png' %}" alt="Image 2">
+            <img class="landing-image" src="{% static '/images/landing3.png' %}" alt="Image 3">
+            <img class="landing-image" src="{% static '/images/landing4.png' %}" alt="Image 4">
+            <img class="landing-image" src="{% static '/images/landing5.png' %}" alt="Image 5">
         </div>
     </section>
     <script>
